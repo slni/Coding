@@ -8,24 +8,33 @@
 import UIKit
 
 class BufferOverflowVC: UIViewController {
+    
+    lazy var button1: UIButton = {
+        $0.setTitle("计算spo2", for: .normal)
+        $0.backgroundColor = .red
+        $0.setTitleColor(.white, for: .normal)
+        $0.setTitleColor(.red, for: .highlighted)
+        $0.addTarget(self, action: #selector(button1Clicked), for: .touchUpInside)
+        return $0
+    }(UIButton())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Buffer overflow"
-
-        // Do any additional setup after loading the view.
+        configUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configUI() {
+        view.addSubview(button1)
+        button1.snp.makeConstraints { (make) in
+            make.top.equalTo(view.snp.top).offset(100)
+            make.centerX.equalTo(view.snp.centerX)
+        }
     }
-    */
+    
+    @objc func button1Clicked() {
+        doSpo2Algo()
+    }
 
 }

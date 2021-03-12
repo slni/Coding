@@ -22,6 +22,7 @@
 		77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */; };
 		77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EC725FB3A560079F813 /* MessageViewController.swift */; };
 		77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EE325FB44140079F813 /* BufferOverflowVC.swift */; };
+		77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EEB25FB49410079F813 /* spo2_algo.c */; };
 		89ED4D510194A365454255BB /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817CC7D5254141C1696EB21 /* Pods_DemoAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,9 @@
 		77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTabBarViewController.swift; sourceTree = "<group>"; };
 		77F99EC725FB3A560079F813 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		77F99EE325FB44140079F813 /* BufferOverflowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferOverflowVC.swift; sourceTree = "<group>"; };
+		77F99EE925FB49400079F813 /* DemoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		77F99EEA25FB49410079F813 /* spo2_algo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spo2_algo.h; sourceTree = "<group>"; };
+		77F99EEB25FB49410079F813 /* spo2_algo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spo2_algo.c; sourceTree = "<group>"; };
 		C3186F407C61C7DB6B76DFB8 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp_DemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +147,7 @@
 				779D0BA825F219530082C89F /* Assets.xcassets */,
 				779D0BAA25F219530082C89F /* LaunchScreen.storyboard */,
 				779D0BAD25F219530082C89F /* Info.plist */,
+				77F99EE925FB49400079F813 /* DemoApp-Bridging-Header.h */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			children = (
 				77F99E7425FB184E0079F813 /* 01-ReadMe.swift */,
 				77F99EE325FB44140079F813 /* BufferOverflowVC.swift */,
+				77F99EE825FB48AF0079F813 /* Mock01 */,
 			);
 			path = "01-BufferOverflow";
 			sourceTree = "<group>";
@@ -208,6 +214,15 @@
 				77F99EC725FB3A560079F813 /* MessageViewController.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		77F99EE825FB48AF0079F813 /* Mock01 */ = {
+			isa = PBXGroup;
+			children = (
+				77F99EEA25FB49410079F813 /* spo2_algo.h */,
+				77F99EEB25FB49410079F813 /* spo2_algo.c */,
+			);
+			path = Mock01;
 			sourceTree = "<group>";
 		};
 		CF1A5E04BFEA658102CC189B /* Pods */ = {
@@ -295,6 +310,7 @@
 				TargetAttributes = {
 					779D0B9B25F219530082C89F = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					779D0BB125F219540082C89F = {
 						CreatedOnToolsVersion = 12.4;
@@ -460,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */,
 				779D0BA025F219530082C89F /* AppDelegate.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
@@ -637,6 +654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;
 				INFOPLIST_FILE = DemoApp/Info.plist;
@@ -647,6 +665,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slni.123.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;
 				INFOPLIST_FILE = DemoApp/Info.plist;
@@ -668,6 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slni.123.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
