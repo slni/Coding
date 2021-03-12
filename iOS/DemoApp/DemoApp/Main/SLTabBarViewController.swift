@@ -9,11 +9,7 @@ import UIKit
 
 class SLTabBarViewController: UITabBarController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    static var customViewControllers: [UIViewController] {
+    lazy var customViewControllers: [UIViewController] = {
         let home = HomeViewController()
         home.tabBarItem.title = "首页"
         home.tabBarItem.image = UIImage(named: "home")
@@ -30,6 +26,10 @@ class SLTabBarViewController: UITabBarController {
         mine.tabBarItem.selectedImage = UIImage(named: "mine_selected")
         
         return [home, message, mine]
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-
+    
 }
