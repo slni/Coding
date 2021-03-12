@@ -20,6 +20,7 @@
 		77F99E9625FB1E810079F813 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E9525FB1E810079F813 /* MineViewController.swift */; };
 		77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E9D25FB1EDD0079F813 /* SLNavigationController.swift */; };
 		77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */; };
+		77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EC725FB3A560079F813 /* MessageViewController.swift */; };
 		89ED4D510194A365454255BB /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817CC7D5254141C1696EB21 /* Pods_DemoAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		77F99E9525FB1E810079F813 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		77F99E9D25FB1EDD0079F813 /* SLNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLNavigationController.swift; sourceTree = "<group>"; };
 		77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTabBarViewController.swift; sourceTree = "<group>"; };
+		77F99EC725FB3A560079F813 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		C3186F407C61C7DB6B76DFB8 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp_DemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 		77F99E8925FB1E280079F813 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				77F99EC625FB3A340079F813 /* Message */,
 				77F99E9325FB1E6A0079F813 /* Mine */,
 				77F99E9225FB1E5F0079F813 /* Home */,
 				77F99E9D25FB1EDD0079F813 /* SLNavigationController.swift */,
@@ -194,6 +197,14 @@
 				77F99E9525FB1E810079F813 /* MineViewController.swift */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		77F99EC625FB3A340079F813 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				77F99EC725FB3A560079F813 /* MessageViewController.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		CF1A5E04BFEA658102CC189B /* Pods */ = {
@@ -412,6 +423,7 @@
 			files = (
 				779D0BA025F219530082C89F /* AppDelegate.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
+				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,

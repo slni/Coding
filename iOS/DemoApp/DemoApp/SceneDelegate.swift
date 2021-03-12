@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.frame = windowScene.coordinateSpace.bounds
         let tabVC = SLTabBarViewController()
-        tabVC.viewControllers = [HomeViewController(), MineViewController()].map {
+        tabVC.viewControllers = SLTabBarViewController.customViewControllers.map { 
             SLNavigationController(rootViewController: $0)
         }
         window?.rootViewController = tabVC

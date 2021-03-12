@@ -1,5 +1,5 @@
 //
-//  MineViewController.swift
+//  MessageViewController.swift
 //  DemoApp
 //
 //  Created by 倪申雷 on 2021/3/12.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class MineViewController: UIViewController {
+class MessageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .red
         // Do any additional setup after loading the view.
     }
     
