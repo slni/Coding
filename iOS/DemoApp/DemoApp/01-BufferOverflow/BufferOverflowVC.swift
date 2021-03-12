@@ -9,12 +9,12 @@ import UIKit
 
 class BufferOverflowVC: UIViewController {
     
-    lazy var button1: UIButton = {
+    lazy var mockAButton: UIButton = {
         $0.setTitle("计算spo2", for: .normal)
         $0.backgroundColor = .red
         $0.setTitleColor(.white, for: .normal)
         $0.setTitleColor(.red, for: .highlighted)
-        $0.addTarget(self, action: #selector(button1Clicked), for: .touchUpInside)
+        $0.addTarget(self, action: #selector(mockA), for: .touchUpInside)
         return $0
     }(UIButton())
 
@@ -26,14 +26,14 @@ class BufferOverflowVC: UIViewController {
     }
     
     func configUI() {
-        view.addSubview(button1)
-        button1.snp.makeConstraints { (make) in
+        view.addSubview(mockAButton)
+        mockAButton.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(100)
             make.centerX.equalTo(view.snp.centerX)
         }
     }
     
-    @objc func button1Clicked() {
+    @objc func mockA() {
         doSpo2Algo()
     }
 
