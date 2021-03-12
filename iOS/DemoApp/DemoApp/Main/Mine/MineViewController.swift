@@ -12,6 +12,7 @@ class MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        navigationItem.title = "我的"
         // Do any additional setup after loading the view.
     }
     
