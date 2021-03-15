@@ -25,7 +25,7 @@
     * 2. (真偶发性)完全一样条件, 也不一定会触发奔溃(如内存溢出问题)
  
  ### 3. AddressSanitizer分析工具
- * Google旗下的开源工具AddressSanitizer可以帮助我们检测此类错误
+ * Google旗下的开源工具AddressSanitizer可以帮助我们检测此类错误 --> https://github.com/google/sanitizers
  
  ### 4. Xcode中内置了AddressSanitizer分析工具
 

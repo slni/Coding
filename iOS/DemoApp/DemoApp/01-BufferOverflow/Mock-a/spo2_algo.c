@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// AddressSanitizer (detects addressability issues)
 int doSpo2Algo(void) {
     int spo2_size = 10;
     Student* spo2_array = (Student*)malloc((spo2_size) * sizeof(Student));
