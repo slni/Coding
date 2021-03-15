@@ -3,6 +3,5 @@
 //
 
 #import "spo2_algo.h"
-#import "google_sanitizers.h"
-#import "SanitizersOCBridge.h"
+#import "RuntimeSanitizationMock.h"
 

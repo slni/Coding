@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		61A0FA769E624DE17AAFBE31 /* Pods_DemoApp_DemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */; };
 		71716171431C2E7157372EA8 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */; };
-		774455DD25FF0C3000872D89 /* SanitizersOCBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 774455DC25FF0C3000872D89 /* SanitizersOCBridge.mm */; };
+		7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
 		779D0BA925F219530082C89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BA825F219530082C89F /* Assets.xcassets */; };
@@ -24,8 +24,6 @@
 		77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EC725FB3A560079F813 /* MessageViewController.swift */; };
 		77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EE325FB44140079F813 /* BufferOverflowVC.swift */; };
 		77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EEB25FB49410079F813 /* spo2_algo.c */; };
-		77F99F0325FB79D00079F813 /* google_sanitizers.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F99F0225FB79D00079F813 /* google_sanitizers.c */; };
-		77F99F0925FB7FD70079F813 /* google_sanitizers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F99F0725FB7FD70079F813 /* google_sanitizers.cpp */; };
 		89ED4D510194A365454255BB /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817CC7D5254141C1696EB21 /* Pods_DemoAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +52,8 @@
 		3C0E6C60CD2AD82E90CD9015 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5CFFEA3BC85EA4BC18A10105 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		774455DB25FF0C3000872D89 /* SanitizersOCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SanitizersOCBridge.h; sourceTree = "<group>"; };
-		774455DC25FF0C3000872D89 /* SanitizersOCBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SanitizersOCBridge.mm; sourceTree = "<group>"; };
+		7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSanitizationMock.h; sourceTree = "<group>"; };
+		7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSanitizationMock.m; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0B9F25F219530082C89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779D0BA125F219530082C89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,10 +76,6 @@
 		77F99EE925FB49400079F813 /* DemoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		77F99EEA25FB49410079F813 /* spo2_algo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spo2_algo.h; sourceTree = "<group>"; };
 		77F99EEB25FB49410079F813 /* spo2_algo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spo2_algo.c; sourceTree = "<group>"; };
-		77F99F0125FB79D00079F813 /* google_sanitizers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = google_sanitizers.h; sourceTree = "<group>"; };
-		77F99F0225FB79D00079F813 /* google_sanitizers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = google_sanitizers.c; sourceTree = "<group>"; };
-		77F99F0725FB7FD70079F813 /* google_sanitizers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = google_sanitizers.cpp; sourceTree = "<group>"; };
-		77F99F0825FB7FD70079F813 /* google_sanitizers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = google_sanitizers.hpp; sourceTree = "<group>"; };
 		C3186F407C61C7DB6B76DFB8 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp_DemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -238,12 +232,8 @@
 		77F99EF925FB4E370079F813 /* Mock-b */ = {
 			isa = PBXGroup;
 			children = (
-				77F99F0125FB79D00079F813 /* google_sanitizers.h */,
-				77F99F0225FB79D00079F813 /* google_sanitizers.c */,
-				77F99F0825FB7FD70079F813 /* google_sanitizers.hpp */,
-				77F99F0725FB7FD70079F813 /* google_sanitizers.cpp */,
-				774455DB25FF0C3000872D89 /* SanitizersOCBridge.h */,
-				774455DC25FF0C3000872D89 /* SanitizersOCBridge.mm */,
+				7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */,
+				7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */,
 			);
 			path = "Mock-b";
 			sourceTree = "<group>";
@@ -502,14 +492,12 @@
 				77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */,
 				779D0BA025F219530082C89F /* AppDelegate.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
-				774455DD25FF0C3000872D89 /* SanitizersOCBridge.mm in Sources */,
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
-				77F99F0925FB7FD70079F813 /* google_sanitizers.cpp in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
-				77F99F0325FB79D00079F813 /* google_sanitizers.c in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
+				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
 				77F99E8B25FB1E4C0079F813 /* HomeViewController.swift in Sources */,
 				77F99E9625FB1E810079F813 /* MineViewController.swift in Sources */,
 			);
