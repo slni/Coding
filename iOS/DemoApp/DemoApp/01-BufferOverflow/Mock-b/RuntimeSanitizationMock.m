@@ -48,7 +48,7 @@
     // 8 * 4 = 32bit
     int k = 0x7fffffff;
     k += 1;
-    return 0; // runtime error: signed integer overflow: 2147483647 + 1 cannot be represented in type 'int'
+    return 0; // runtime error: signed integer overflow: 2147483647 + 1 cannot be represented in type 'int'  //2 147 483 648=2^31
 }
 
 

@@ -26,6 +26,7 @@
  
  ### 3. AddressSanitizer分析工具
  * Google旗下的开源工具AddressSanitizer可以帮助我们检测此类错误 --> https://github.com/google/sanitizers
+ * Apple文档: https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early
  
  ### 4. Xcode中内置了AddressSanitizer分析工具
 
