@@ -11,22 +11,31 @@
 
 /**
  * AddressSanitizer (aka ASan) is a memory error detector for C/C++. It finds:
-    * Use after free (dangling pointer dereference)
     * Heap buffer overflow
     * Stack buffer overflow
     * Global buffer overflow
+ 
+    * Use after free (dangling pointer dereference)
     * Use after return
     * Use after scope
     * Initialization order bugs
     * Memory leaks
 */
 +(int)addressSanitizer {
-    char *x = (char*)malloc(10 * sizeof(char*));
-    free(x);
-    NSString *result = [NSString stringWithFormat:@"5 index = %d", x[5]];
-    NSLog(@"%@", result);
+    foo();
     return 0;
 }
+
+int global_array[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+void foo() {
+    int idx = 10;
+    global_array[idx] = 42; // Error: out of bounds access of global variable
+    char *heap_buffer = malloc(10);
+    heap_buffer[idx] = 'x'; // Error: out of bounds access of heap allocated variable
+    char stack_buffer[10];
+    stack_buffer[idx] = 'x'; // Error: out of bounds access of stack allocated variable
+}
+
 
 /**
  多线程编程中, 常见的问题有:
