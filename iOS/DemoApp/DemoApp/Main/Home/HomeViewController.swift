@@ -12,11 +12,14 @@ class HomeViewController: UIViewController {
     
     enum SubDemo: String, CaseIterable {
         case bufferOverflow = "01-BufferOverflow"
+        case igListKit = "02-IGListKit"
         
         var vc: UIViewController {
             switch self {
             case .bufferOverflow:
                 return BufferOverflowVC()
+            case .igListKit:
+                return IGListKitVC()
             }
         }
         
@@ -55,7 +58,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: homeCellID)
-        cell?.textLabel?.text = SubDemo.allCases[indexPath.section].rawValue
+        cell?.textLabel?.text = SubDemo.allCases[indexPath.row].rawValue
         return cell!
     }
     
@@ -64,7 +67,7 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let targetVC = SubDemo.allCases[indexPath.section].vc
+        let targetVC = SubDemo.allCases[indexPath.row].vc
         targetVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(targetVC, animated: true)
     }
