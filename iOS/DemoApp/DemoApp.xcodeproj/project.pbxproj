@@ -11,6 +11,14 @@
 		71716171431C2E7157372EA8 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */; };
 		7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714507026088CE1001EDCC7 /* 02-ReadMe.swift */; };
 		7714507926088D05001EDCC7 /* IGListKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714507826088D05001EDCC7 /* IGListKitVC.swift */; };
+		771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450D92608B3C1001EDCC7 /* IG01ViewController.swift */; };
+		771450EC2608B4ED001EDCC7 /* CenterLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450EB2608B4ED001EDCC7 /* CenterLabelCell.swift */; };
+		771450F12608B508001EDCC7 /* GridSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450F02608B508001EDCC7 /* GridSectionController.swift */; };
+		771450F62608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450F52608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift */; };
+		771450FB2608B6B2001EDCC7 /* UserSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450FA2608B6B2001EDCC7 /* UserSectionController.swift */; };
+		771451002608B6D7001EDCC7 /* DetailLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450FF2608B6D7001EDCC7 /* DetailLabelCell.swift */; };
+		771451052608B732001EDCC7 /* ExpandableSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771451042608B732001EDCC7 /* ExpandableSectionController.swift */; };
+		7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771451092608B76A001EDCC7 /* LabelCell.swift */; };
 		7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
@@ -56,6 +64,14 @@
 		6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7714507026088CE1001EDCC7 /* 02-ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02-ReadMe.swift"; sourceTree = "<group>"; };
 		7714507826088D05001EDCC7 /* IGListKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKitVC.swift; sourceTree = "<group>"; };
+		771450D92608B3C1001EDCC7 /* IG01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IG01ViewController.swift; sourceTree = "<group>"; };
+		771450EB2608B4ED001EDCC7 /* CenterLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterLabelCell.swift; sourceTree = "<group>"; };
+		771450F02608B508001EDCC7 /* GridSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSectionController.swift; sourceTree = "<group>"; };
+		771450F52608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGListCollectionContext+Refinements.swift"; sourceTree = "<group>"; };
+		771450FA2608B6B2001EDCC7 /* UserSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSectionController.swift; sourceTree = "<group>"; };
+		771450FF2608B6D7001EDCC7 /* DetailLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailLabelCell.swift; sourceTree = "<group>"; };
+		771451042608B732001EDCC7 /* ExpandableSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableSectionController.swift; sourceTree = "<group>"; };
+		771451092608B76A001EDCC7 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSanitizationMock.h; sourceTree = "<group>"; };
 		7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSanitizationMock.m; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,10 +141,58 @@
 		7714506F26088CAB001EDCC7 /* 02-IGListKit */ = {
 			isa = PBXGroup;
 			children = (
+				771450D82608B3A6001EDCC7 /* demo01 */,
 				7714507026088CE1001EDCC7 /* 02-ReadMe.swift */,
 				7714507826088D05001EDCC7 /* IGListKitVC.swift */,
+				771450F52608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift */,
 			);
 			path = "02-IGListKit";
+			sourceTree = "<group>";
+		};
+		771450D82608B3A6001EDCC7 /* demo01 */ = {
+			isa = PBXGroup;
+			children = (
+				771450EA2608B4E6001EDCC7 /* Views */,
+				771450E92608B4AB001EDCC7 /* Models */,
+				771450E52608B3EF001EDCC7 /* SectionControllers */,
+				771450E12608B3C5001EDCC7 /* ViewControllers */,
+			);
+			path = demo01;
+			sourceTree = "<group>";
+		};
+		771450E12608B3C5001EDCC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				771450D92608B3C1001EDCC7 /* IG01ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		771450E52608B3EF001EDCC7 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				771451042608B732001EDCC7 /* ExpandableSectionController.swift */,
+				771450F02608B508001EDCC7 /* GridSectionController.swift */,
+				771450FA2608B6B2001EDCC7 /* UserSectionController.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		771450E92608B4AB001EDCC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		771450EA2608B4E6001EDCC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				771451092608B76A001EDCC7 /* LabelCell.swift */,
+				771450EB2608B4ED001EDCC7 /* CenterLabelCell.swift */,
+				771450FF2608B6D7001EDCC7 /* DetailLabelCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		779D0B9325F219530082C89F = {
@@ -505,15 +569,23 @@
 			files = (
 				77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */,
 				779D0BA025F219530082C89F /* AppDelegate.swift in Sources */,
+				771451002608B6D7001EDCC7 /* DetailLabelCell.swift in Sources */,
+				771450FB2608B6B2001EDCC7 /* UserSectionController.swift in Sources */,
 				7714507926088D05001EDCC7 /* IGListKitVC.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
 				7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */,
+				771451052608B732001EDCC7 /* ExpandableSectionController.swift in Sources */,
+				771450F62608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift in Sources */,
+				771450F12608B508001EDCC7 /* GridSectionController.swift in Sources */,
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
 				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
+				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,
+				771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */,
+				771450EC2608B4ED001EDCC7 /* CenterLabelCell.swift in Sources */,
 				77F99E8B25FB1E4C0079F813 /* HomeViewController.swift in Sources */,
 				77F99E9625FB1E810079F813 /* MineViewController.swift in Sources */,
 			);
