@@ -25,7 +25,7 @@ final class GridItem: NSObject {
     }
 
     private func computeItems() -> [String] {
-        return [Int](1...itemCount).map {
+        return [Int](0..<itemCount).map {
             String(describing: $0)
         }
     }
