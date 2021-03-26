@@ -19,6 +19,11 @@
 		771451002608B6D7001EDCC7 /* DetailLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450FF2608B6D7001EDCC7 /* DetailLabelCell.swift */; };
 		771451052608B732001EDCC7 /* ExpandableSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771451042608B732001EDCC7 /* ExpandableSectionController.swift */; };
 		7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771451092608B76A001EDCC7 /* LabelCell.swift */; };
+		771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB167260DE788004EB52B /* UseDeallocatedMemory.m */; };
+		771BB171260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB170260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m */; };
+		771BB177260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB176260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m */; };
+		771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */; };
+		771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */; };
 		7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
@@ -72,6 +77,16 @@
 		771450FF2608B6D7001EDCC7 /* DetailLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailLabelCell.swift; sourceTree = "<group>"; };
 		771451042608B732001EDCC7 /* ExpandableSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableSectionController.swift; sourceTree = "<group>"; };
 		771451092608B76A001EDCC7 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		771BB166260DE788004EB52B /* UseDeallocatedMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseDeallocatedMemory.h; sourceTree = "<group>"; };
+		771BB167260DE788004EB52B /* UseDeallocatedMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseDeallocatedMemory.m; sourceTree = "<group>"; };
+		771BB16F260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeallocationOfDeallocatedMemory.h; sourceTree = "<group>"; };
+		771BB170260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocationOfDeallocatedMemory.m; sourceTree = "<group>"; };
+		771BB175260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeallocationOfNonallocatedMemory.h; sourceTree = "<group>"; };
+		771BB176260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocationOfNonallocatedMemory.m; sourceTree = "<group>"; };
+		771BB17B260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseStackMemoryAfterFunctionReturn.h; sourceTree = "<group>"; };
+		771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseStackMemoryAfterFunctionReturn.m; sourceTree = "<group>"; };
+		771BB181260DF47E004EB52B /* UseOut-of-ScopeStackMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UseOut-of-ScopeStackMemory.h"; sourceTree = "<group>"; };
+		771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UseOut-of-ScopeStackMemory.m"; sourceTree = "<group>"; };
 		7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSanitizationMock.h; sourceTree = "<group>"; };
 		7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSanitizationMock.m; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +210,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		771BB15F260DE581004EB52B /* Mock-c-apple */ = {
+			isa = PBXGroup;
+			children = (
+				771BB163260DE5BA004EB52B /* AddressSanitizer */,
+				771BB164260DE5D0004EB52B /* ThreadSanitizer  */,
+				771BB165260DE5DE004EB52B /* UndefinedBehaviorSanitizer  */,
+			);
+			path = "Mock-c-apple";
+			sourceTree = "<group>";
+		};
+		771BB163260DE5BA004EB52B /* AddressSanitizer */ = {
+			isa = PBXGroup;
+			children = (
+				771BB166260DE788004EB52B /* UseDeallocatedMemory.h */,
+				771BB167260DE788004EB52B /* UseDeallocatedMemory.m */,
+				771BB16F260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.h */,
+				771BB170260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m */,
+				771BB175260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.h */,
+				771BB176260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m */,
+				771BB17B260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.h */,
+				771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */,
+				771BB181260DF47E004EB52B /* UseOut-of-ScopeStackMemory.h */,
+				771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */,
+			);
+			path = AddressSanitizer;
+			sourceTree = "<group>";
+		};
+		771BB164260DE5D0004EB52B /* ThreadSanitizer  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ThreadSanitizer ";
+			sourceTree = "<group>";
+		};
+		771BB165260DE5DE004EB52B /* UndefinedBehaviorSanitizer  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UndefinedBehaviorSanitizer ";
+			sourceTree = "<group>";
+		};
 		779D0B9325F219530082C89F = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +313,8 @@
 				77F99E7425FB184E0079F813 /* 01-ReadMe.swift */,
 				77F99EE325FB44140079F813 /* BufferOverflowVC.swift */,
 				77F99EE825FB48AF0079F813 /* Mock-a */,
-				77F99EF925FB4E370079F813 /* Mock-b */,
+				77F99EF925FB4E370079F813 /* Mock-b-google */,
+				771BB15F260DE581004EB52B /* Mock-c-apple */,
 			);
 			path = "01-BufferOverflow";
 			sourceTree = "<group>";
@@ -307,13 +364,13 @@
 			path = "Mock-a";
 			sourceTree = "<group>";
 		};
-		77F99EF925FB4E370079F813 /* Mock-b */ = {
+		77F99EF925FB4E370079F813 /* Mock-b-google */ = {
 			isa = PBXGroup;
 			children = (
 				7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */,
 				7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */,
 			);
-			path = "Mock-b";
+			path = "Mock-b-google";
 			sourceTree = "<group>";
 		};
 		CF1A5E04BFEA658102CC189B /* Pods */ = {
@@ -573,14 +630,19 @@
 				771450FB2608B6B2001EDCC7 /* UserSectionController.swift in Sources */,
 				7714507926088D05001EDCC7 /* IGListKitVC.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
+				771BB177260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m in Sources */,
+				771BB171260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m in Sources */,
 				7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */,
 				771451052608B732001EDCC7 /* ExpandableSectionController.swift in Sources */,
 				771450F62608B63A001EDCC7 /* IGListCollectionContext+Refinements.swift in Sources */,
 				771450F12608B508001EDCC7 /* GridSectionController.swift in Sources */,
+				771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */,
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
+				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
+				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
 				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
 				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,
