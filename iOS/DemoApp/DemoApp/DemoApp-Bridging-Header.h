@@ -9,3 +9,5 @@
 #import "DeallocationOfDeallocatedMemory.h"
 #import "DeallocationOfNonallocatedMemory.h"
 #import "UseStackMemoryAfterFunctionReturn.h"
+#import "UseOut-of-ScopeStackMemory.h"
+#import "OverflowUnderflowOfBuffers.h"

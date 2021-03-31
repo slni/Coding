@@ -25,6 +25,8 @@
 		771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */; };
 		771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */; };
 		7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */; };
+		774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */; };
+		774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
 		779D0BA925F219530082C89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BA825F219530082C89F /* Assets.xcassets */; };
@@ -89,6 +91,10 @@
 		771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UseOut-of-ScopeStackMemory.m"; sourceTree = "<group>"; };
 		7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSanitizationMock.h; sourceTree = "<group>"; };
 		7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSanitizationMock.m; sourceTree = "<group>"; };
+		774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowUnderflowOfBuffers.h; sourceTree = "<group>"; };
+		774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverflowUnderflowOfBuffers.m; sourceTree = "<group>"; };
+		774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OverflowOfCPPContainers.cpp; sourceTree = "<group>"; };
+		774483A7261349EB00C5CD34 /* OverflowOfCPPContainers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OverflowOfCPPContainers.hpp; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0B9F25F219530082C89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779D0BA125F219530082C89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +239,10 @@
 				771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */,
 				771BB181260DF47E004EB52B /* UseOut-of-ScopeStackMemory.h */,
 				771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */,
+				774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */,
+				774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */,
+				774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */,
+				774483A7261349EB00C5CD34 /* OverflowOfCPPContainers.hpp */,
 			);
 			path = AddressSanitizer;
 			sourceTree = "<group>";
@@ -642,7 +652,9 @@
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
+				774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
+				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
 				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
 				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,

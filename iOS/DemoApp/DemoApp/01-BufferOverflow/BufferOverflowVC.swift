@@ -77,7 +77,7 @@ class BufferOverflowVC: UIViewController {
     @objc func mockSpo2() {
         //doSpo2Algo()
         
-        UseStackMemoryAfterFunctionReturn.test()
+        OverflowUnderflowOfBuffers.test()
     }
     
     @objc func mockAScan() {
