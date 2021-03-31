@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		61A0FA769E624DE17AAFBE31 /* Pods_DemoApp_DemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */; };
 		71716171431C2E7157372EA8 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */; };
+		770D60F726149535001AFB1F /* DebounceThrottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D60F626149535001AFB1F /* DebounceThrottle.swift */; };
+		770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D60FE2614965F001AFB1F /* DebounceThrottleTestVC.swift */; };
 		7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714507026088CE1001EDCC7 /* 02-ReadMe.swift */; };
 		7714507926088D05001EDCC7 /* IGListKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714507826088D05001EDCC7 /* IGListKitVC.swift */; };
 		771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771450D92608B3C1001EDCC7 /* IG01ViewController.swift */; };
@@ -69,6 +71,8 @@
 		3C0E6C60CD2AD82E90CD9015 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5CFFEA3BC85EA4BC18A10105 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6E6183E780BCE5F3E71A9769 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770D60F626149535001AFB1F /* DebounceThrottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceThrottle.swift; sourceTree = "<group>"; };
+		770D60FE2614965F001AFB1F /* DebounceThrottleTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceThrottleTestVC.swift; sourceTree = "<group>"; };
 		7714507026088CE1001EDCC7 /* 02-ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02-ReadMe.swift"; sourceTree = "<group>"; };
 		7714507826088D05001EDCC7 /* IGListKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKitVC.swift; sourceTree = "<group>"; };
 		771450D92608B3C1001EDCC7 /* IG01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IG01ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,15 @@
 				1817CC7D5254141C1696EB21 /* Pods_DemoAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		770D60F5261494F3001AFB1F /* 03-DebounceThrottle */ = {
+			isa = PBXGroup;
+			children = (
+				770D60F626149535001AFB1F /* DebounceThrottle.swift */,
+				770D60FE2614965F001AFB1F /* DebounceThrottleTestVC.swift */,
+			);
+			path = "03-DebounceThrottle";
 			sourceTree = "<group>";
 		};
 		7714506F26088CAB001EDCC7 /* 02-IGListKit */ = {
@@ -289,6 +302,7 @@
 				77F99E8925FB1E280079F813 /* Main */,
 				77F99E7325FB17DC0079F813 /* 01-BufferOverflow */,
 				7714506F26088CAB001EDCC7 /* 02-IGListKit */,
+				770D60F5261494F3001AFB1F /* 03-DebounceThrottle */,
 				779D0B9F25F219530082C89F /* AppDelegate.swift */,
 				779D0BA125F219530082C89F /* SceneDelegate.swift */,
 				779D0BA825F219530082C89F /* Assets.xcassets */,
@@ -655,10 +669,12 @@
 				774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
+				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
 				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
 				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,
 				771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */,
+				770D60F726149535001AFB1F /* DebounceThrottle.swift in Sources */,
 				771450EC2608B4ED001EDCC7 /* CenterLabelCell.swift in Sources */,
 				77F99E8B25FB1E4C0079F813 /* HomeViewController.swift in Sources */,
 				77F99E9625FB1E810079F813 /* MineViewController.swift in Sources */,

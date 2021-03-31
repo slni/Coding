@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     enum SubDemo: String, CaseIterable {
         case bufferOverflow = "01-BufferOverflow"
         case igListKit = "02-IGListKit"
+        case debounceThrottle = "03-DebounceThrottle"
         
         var vc: UIViewController {
             switch self {
@@ -20,6 +21,8 @@ class HomeViewController: UIViewController {
                 return BufferOverflowVC()
             case .igListKit:
                 return IGListKitVC()
+            case .debounceThrottle:
+                return DebounceThrottleTestVC()
             }
         }
         
