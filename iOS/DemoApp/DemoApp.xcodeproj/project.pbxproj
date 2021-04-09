@@ -27,7 +27,6 @@
 		771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */; };
 		771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */; };
 		774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */; };
-		774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
 		779D0BA925F219530082C89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BA825F219530082C89F /* Assets.xcassets */; };
@@ -40,8 +39,10 @@
 		77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E9D25FB1EDD0079F813 /* SLNavigationController.swift */; };
 		77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */; };
 		77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EC725FB3A560079F813 /* MessageViewController.swift */; };
-		77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EE325FB44140079F813 /* BufferOverflowVC.swift */; };
+		77F99EE425FB44140079F813 /* RuntimeSanitizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EE325FB44140079F813 /* RuntimeSanitizationVC.swift */; };
 		77F99EEC25FB49410079F813 /* spo2_algo.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F99EEB25FB49410079F813 /* spo2_algo.c */; };
+		77FBF5B626204EB000BA0C86 /* ASTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77FBF5B426204EB000BA0C86 /* ASTest.cpp */; };
+		77FBF5C226204F2100BA0C86 /* OverflowOfCPPContainers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FBF5C126204F2100BA0C86 /* OverflowOfCPPContainers.mm */; };
 		89ED4D510194A365454255BB /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817CC7D5254141C1696EB21 /* Pods_DemoAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,8 +95,6 @@
 		771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UseOut-of-ScopeStackMemory.m"; sourceTree = "<group>"; };
 		774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowUnderflowOfBuffers.h; sourceTree = "<group>"; };
 		774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverflowUnderflowOfBuffers.m; sourceTree = "<group>"; };
-		774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OverflowOfCPPContainers.cpp; sourceTree = "<group>"; };
-		774483A7261349EB00C5CD34 /* OverflowOfCPPContainers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OverflowOfCPPContainers.hpp; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0B9F25F219530082C89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779D0BA125F219530082C89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,10 +113,14 @@
 		77F99E9D25FB1EDD0079F813 /* SLNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLNavigationController.swift; sourceTree = "<group>"; };
 		77F99EA225FB1EFB0079F813 /* SLTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTabBarViewController.swift; sourceTree = "<group>"; };
 		77F99EC725FB3A560079F813 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		77F99EE325FB44140079F813 /* BufferOverflowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferOverflowVC.swift; sourceTree = "<group>"; };
+		77F99EE325FB44140079F813 /* RuntimeSanitizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeSanitizationVC.swift; sourceTree = "<group>"; };
 		77F99EE925FB49400079F813 /* DemoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		77F99EEA25FB49410079F813 /* spo2_algo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spo2_algo.h; sourceTree = "<group>"; };
 		77F99EEB25FB49410079F813 /* spo2_algo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spo2_algo.c; sourceTree = "<group>"; };
+		77FBF5B426204EB000BA0C86 /* ASTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ASTest.cpp; sourceTree = "<group>"; };
+		77FBF5B526204EB000BA0C86 /* ASTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ASTest.hpp; sourceTree = "<group>"; };
+		77FBF5C026204F2100BA0C86 /* OverflowOfCPPContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowOfCPPContainers.h; sourceTree = "<group>"; };
+		77FBF5C126204F2100BA0C86 /* OverflowOfCPPContainers.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OverflowOfCPPContainers.mm; sourceTree = "<group>"; };
 		C3186F407C61C7DB6B76DFB8 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB3DC0C53C36DE0C0CC842A0 /* Pods_DemoApp_DemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp_DemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -251,8 +254,10 @@
 				771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */,
 				774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */,
 				774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */,
-				774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */,
-				774483A7261349EB00C5CD34 /* OverflowOfCPPContainers.hpp */,
+				77FBF5B426204EB000BA0C86 /* ASTest.cpp */,
+				77FBF5B526204EB000BA0C86 /* ASTest.hpp */,
+				77FBF5C026204F2100BA0C86 /* OverflowOfCPPContainers.h */,
+				77FBF5C126204F2100BA0C86 /* OverflowOfCPPContainers.mm */,
 			);
 			path = AddressSanitizer;
 			sourceTree = "<group>";
@@ -332,7 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				77F99E7425FB184E0079F813 /* 01-ReadMe.swift */,
-				77F99EE325FB44140079F813 /* BufferOverflowVC.swift */,
+				77F99EE325FB44140079F813 /* RuntimeSanitizationVC.swift */,
 				77F99EE825FB48AF0079F813 /* Mock-a */,
 				771BB15F260DE581004EB52B /* Mock-c-apple */,
 			);
@@ -653,12 +658,13 @@
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
-				774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
 				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,
-				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
+				77F99EE425FB44140079F813 /* RuntimeSanitizationVC.swift in Sources */,
+				77FBF5B626204EB000BA0C86 /* ASTest.cpp in Sources */,
 				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,
+				77FBF5C226204F2100BA0C86 /* OverflowOfCPPContainers.mm in Sources */,
 				771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */,
 				770D60F726149535001AFB1F /* DebounceThrottle.swift in Sources */,
 				771450EC2608B4ED001EDCC7 /* CenterLabelCell.swift in Sources */,
@@ -714,6 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -775,6 +782,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -832,6 +840,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;
@@ -856,6 +865,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;

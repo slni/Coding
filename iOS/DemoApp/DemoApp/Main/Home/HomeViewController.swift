@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         var vc: UIViewController {
             switch self {
             case .bufferOverflow:
-                return BufferOverflowVC()
+                return RuntimeSanitizationVC()
             case .igListKit:
                 return IGListKitVC()
             case .debounceThrottle:

@@ -3,7 +3,6 @@
 //
 
 #import "spo2_algo.h"
-#import "RuntimeSanitizationMock.h"
 
 #import "UseDeallocatedMemory.h"
 #import "DeallocationOfDeallocatedMemory.h"
@@ -11,3 +10,4 @@
 #import "UseStackMemoryAfterFunctionReturn.h"
 #import "UseOut-of-ScopeStackMemory.h"
 #import "OverflowUnderflowOfBuffers.h"
+#import "OverflowOfCPPContainers.h"
