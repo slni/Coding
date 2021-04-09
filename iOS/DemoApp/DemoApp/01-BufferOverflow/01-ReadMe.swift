@@ -5,6 +5,17 @@
 //  Created by 倪申雷 on 2021/3/12.
 //
 
+
+/**
+ - Runtime Sanitization: 运行时检测
+    - Address Sanitizer:  地址问题检测 (不能检测内存泄漏问题)
+    - Thread Sanitizer:   线程问题检测
+    - Undefined Behavior Sanitizer:  未定义行为检测 --> "判断输入有没有问题”的代价比问题本身还要高"
+ */
+
+
+
+
 /**
  
  ### 1. 内存问题概述:
@@ -14,6 +25,8 @@
     - 修改了不属于自己的内存区域, 非法内存的访问;  造成奔溃
  * 僵尸对象: (工具: profile -> Zombies)
     - “僵尸”对象是指在被释放了之后再被访问的对象，事实上已经不存在了;  造成奔溃
+        - 僵尸对象：内存已经被回收的对象。
+        - 野指针：指向僵尸对象的指针，向野指针发送消息会导致崩溃。野指针错误形式在Xcode中通常表现为：Thread 1：EXC_BAD_ACCESS，因为你访问了一块已经不属于你的内存。
  
  ### 2. 缓冲区溢出 Buffer overflow
  * 什么是缓冲区?
@@ -33,16 +46,28 @@
  
  ### 4. Xcode中内置了AddressSanitizer分析工具
 
+ */
+
+
+
+
+
+
+/**
  
- ### 5. 多线程编程中, 常见的问题有:
-  * 5.1 死锁Deadlock
+ ### 多线程编程中, 常见的问题有:
+  * 1 死锁Deadlock
   死锁指的是由于两个或多个执行单元之间相互等待对方结束而引起阻塞的情况。每个线程都拥有其他线程所需要的资源，同时又等待其他线程已经拥有的资源，并且每个线程在获取所有需要资源之前都不会释放自己已经拥有的资源。
 
-  * 5.2 优先级翻转/倒置/逆转 Priority inversion
+  * 2 优先级翻转/倒置/逆转 Priority inversion
   当一个高优先级任务通过信号量机制访问共享资源时，该信号量已被一低优先级任务占有，而这个低优先级任务在访问共享资源时可能又被其它一些中等优先级任务抢先，因此造成高优先级任务被许多具有较低优先级任务阻塞，实时性难以得到保证。
 
-  * 5.3 数据竞争Race condition
+  * 3 数据竞争Race condition
   Data Race是指多个线程在没有正确加锁的情况下，同时访问同一块数据，并且至少有一个线程是写操作，对数据的读取和修改产生了竞争，从而导致各种不可预计的问题。
-
+ 
+ Important ( 不支持watchos的程序, 真机上运行的iOS和tvOS程序, 仅支持64bit的)
+ You cannot use Thread Sanitizer to diagnose watchOS apps, or to diagnose iOS and tvOS apps running on a device. Use Thread Sanitizer only on your 64-bit macOS app, or to diagnose your 64-bit iOS or tvOS app running in Simulator.
+ 
+ 
  
  */

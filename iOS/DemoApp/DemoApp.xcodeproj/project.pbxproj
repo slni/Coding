@@ -33,6 +33,7 @@
 		779D0BAC25F219530082C89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BAA25F219530082C89F /* LaunchScreen.storyboard */; };
 		779D0BB725F219540082C89F /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BB625F219540082C89F /* DemoAppTests.swift */; };
 		779D0BC225F219540082C89F /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BC125F219540082C89F /* DemoAppUITests.swift */; };
+		77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C6EBF4262065E900C13231 /* DataRaces.swift */; };
 		77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E7425FB184E0079F813 /* 01-ReadMe.swift */; };
 		77F99E8B25FB1E4C0079F813 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E8A25FB1E4C0079F813 /* HomeViewController.swift */; };
 		77F99E9625FB1E810079F813 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E9525FB1E810079F813 /* MineViewController.swift */; };
@@ -107,6 +108,7 @@
 		779D0BBD25F219540082C89F /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0BC125F219540082C89F /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		779D0BC325F219540082C89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C6EBF4262065E900C13231 /* DataRaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaces.swift; sourceTree = "<group>"; };
 		77F99E7425FB184E0079F813 /* 01-ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-ReadMe.swift"; sourceTree = "<group>"; };
 		77F99E8A25FB1E4C0079F813 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		77F99E9525FB1E810079F813 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		771BB164260DE5D0004EB52B /* ThreadSanitizer  */ = {
 			isa = PBXGroup;
 			children = (
+				77C6EBF4262065E900C13231 /* DataRaces.swift */,
 			);
 			path = "ThreadSanitizer ";
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
+				77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
 				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,

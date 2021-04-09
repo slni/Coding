@@ -20,6 +20,8 @@ class RuntimeSanitizationVC: UIViewController {
         case as_UseOfOut_of_ScopeStackMemory
         case as_OverflowAndUnderflowOfBuffers
         case as_OverflowOfCPPContainers
+        
+        case ts_DataRaces
 
         func action() {
             switch self {
@@ -39,6 +41,8 @@ class RuntimeSanitizationVC: UIViewController {
                 OverflowUnderflowOfBuffers.test()
             case .as_OverflowOfCPPContainers:
                 OverflowOfCPPContainers.test()
+            case .ts_DataRaces:
+                DataRaces.shared.startTest()
             }
         }
         
@@ -60,6 +64,8 @@ class RuntimeSanitizationVC: UIViewController {
                 return ("缓冲区溢出(上溢和下溢)", .green)
             case .as_OverflowOfCPPContainers:
                 return ("C++容器溢出", .green)
+            case .ts_DataRaces:
+                return ("多线程数据竞争", .red)
             }
         }
         
@@ -80,6 +86,8 @@ class RuntimeSanitizationVC: UIViewController {
             case .as_OverflowAndUnderflowOfBuffers:
                 return "栈区,堆区,全局区 溢出; (上溢出和下溢出)"
             case .as_OverflowOfCPPContainers:
+                return ""
+            case .ts_DataRaces:
                 return ""
             }
         }
