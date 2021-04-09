@@ -26,7 +26,6 @@
 		771BB177260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB176260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m */; };
 		771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */; };
 		771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */; };
-		7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */; };
 		774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */; };
 		774483A8261349EB00C5CD34 /* OverflowOfCPPContainers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
@@ -93,8 +92,6 @@
 		771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseStackMemoryAfterFunctionReturn.m; sourceTree = "<group>"; };
 		771BB181260DF47E004EB52B /* UseOut-of-ScopeStackMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UseOut-of-ScopeStackMemory.h"; sourceTree = "<group>"; };
 		771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UseOut-of-ScopeStackMemory.m"; sourceTree = "<group>"; };
-		7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeSanitizationMock.h; sourceTree = "<group>"; };
-		7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeSanitizationMock.m; sourceTree = "<group>"; };
 		774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowUnderflowOfBuffers.h; sourceTree = "<group>"; };
 		774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverflowUnderflowOfBuffers.m; sourceTree = "<group>"; };
 		774483A6261349EB00C5CD34 /* OverflowOfCPPContainers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OverflowOfCPPContainers.cpp; sourceTree = "<group>"; };
@@ -337,7 +334,6 @@
 				77F99E7425FB184E0079F813 /* 01-ReadMe.swift */,
 				77F99EE325FB44140079F813 /* BufferOverflowVC.swift */,
 				77F99EE825FB48AF0079F813 /* Mock-a */,
-				77F99EF925FB4E370079F813 /* Mock-b-google */,
 				771BB15F260DE581004EB52B /* Mock-c-apple */,
 			);
 			path = "01-BufferOverflow";
@@ -386,15 +382,6 @@
 				77F99EEB25FB49410079F813 /* spo2_algo.c */,
 			);
 			path = "Mock-a";
-			sourceTree = "<group>";
-		};
-		77F99EF925FB4E370079F813 /* Mock-b-google */ = {
-			isa = PBXGroup;
-			children = (
-				7744560725FF7A1200872D89 /* RuntimeSanitizationMock.h */,
-				7744560825FF7A1200872D89 /* RuntimeSanitizationMock.m */,
-			);
-			path = "Mock-b-google";
 			sourceTree = "<group>";
 		};
 		CF1A5E04BFEA658102CC189B /* Pods */ = {
@@ -671,7 +658,6 @@
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
 				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,
 				77F99EE425FB44140079F813 /* BufferOverflowVC.swift in Sources */,
-				7744560925FF7A1200872D89 /* RuntimeSanitizationMock.m in Sources */,
 				7714510A2608B76A001EDCC7 /* LabelCell.swift in Sources */,
 				771450DA2608B3C1001EDCC7 /* IG01ViewController.swift in Sources */,
 				770D60F726149535001AFB1F /* DebounceThrottle.swift in Sources */,
