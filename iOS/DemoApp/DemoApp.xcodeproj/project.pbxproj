@@ -27,6 +27,9 @@
 		771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB17C260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m */; };
 		771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */; };
 		774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */; };
+		776F63CD262329230093554E /* InvalidFloatCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F63CC262329230093554E /* InvalidFloatCast.m */; };
+		776F63D626233DE30093554E /* IntegerOverflow.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F63D526233DE30093554E /* IntegerOverflow.m */; };
+		776F63DC262345AF0093554E /* DivisionByZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F63DB262345AF0093554E /* DivisionByZero.m */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
 		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
 		779D0BA925F219530082C89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BA825F219530082C89F /* Assets.xcassets */; };
@@ -96,6 +99,12 @@
 		771BB182260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UseOut-of-ScopeStackMemory.m"; sourceTree = "<group>"; };
 		774483852613470900C5CD34 /* OverflowUnderflowOfBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowUnderflowOfBuffers.h; sourceTree = "<group>"; };
 		774483862613470900C5CD34 /* OverflowUnderflowOfBuffers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverflowUnderflowOfBuffers.m; sourceTree = "<group>"; };
+		776F63CB262329230093554E /* InvalidFloatCast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidFloatCast.h; sourceTree = "<group>"; };
+		776F63CC262329230093554E /* InvalidFloatCast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvalidFloatCast.m; sourceTree = "<group>"; };
+		776F63D426233DE30093554E /* IntegerOverflow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerOverflow.h; sourceTree = "<group>"; };
+		776F63D526233DE30093554E /* IntegerOverflow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegerOverflow.m; sourceTree = "<group>"; };
+		776F63DA262345AF0093554E /* DivisionByZero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivisionByZero.h; sourceTree = "<group>"; };
+		776F63DB262345AF0093554E /* DivisionByZero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivisionByZero.m; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0B9F25F219530082C89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779D0BA125F219530082C89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,9 +243,9 @@
 		771BB15F260DE581004EB52B /* Mock-c-apple */ = {
 			isa = PBXGroup;
 			children = (
+				776F63CA262328FF0093554E /* UndefinedBehaviorSanitizer  */,
 				771BB163260DE5BA004EB52B /* AddressSanitizer */,
 				771BB164260DE5D0004EB52B /* ThreadSanitizer  */,
-				771BB165260DE5DE004EB52B /* UndefinedBehaviorSanitizer  */,
 			);
 			path = "Mock-c-apple";
 			sourceTree = "<group>";
@@ -272,9 +281,15 @@
 			path = "ThreadSanitizer ";
 			sourceTree = "<group>";
 		};
-		771BB165260DE5DE004EB52B /* UndefinedBehaviorSanitizer  */ = {
+		776F63CA262328FF0093554E /* UndefinedBehaviorSanitizer  */ = {
 			isa = PBXGroup;
 			children = (
+				776F63CB262329230093554E /* InvalidFloatCast.h */,
+				776F63CC262329230093554E /* InvalidFloatCast.m */,
+				776F63DA262345AF0093554E /* DivisionByZero.h */,
+				776F63DB262345AF0093554E /* DivisionByZero.m */,
+				776F63D426233DE30093554E /* IntegerOverflow.h */,
+				776F63D526233DE30093554E /* IntegerOverflow.m */,
 			);
 			path = "UndefinedBehaviorSanitizer ";
 			sourceTree = "<group>";
@@ -649,6 +664,7 @@
 				771450FB2608B6B2001EDCC7 /* UserSectionController.swift in Sources */,
 				7714507926088D05001EDCC7 /* IGListKitVC.swift in Sources */,
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
+				776F63D626233DE30093554E /* IntegerOverflow.m in Sources */,
 				771BB177260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m in Sources */,
 				771BB171260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m in Sources */,
 				7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */,
@@ -657,6 +673,7 @@
 				771450F12608B508001EDCC7 /* GridSectionController.swift in Sources */,
 				771BB17D260DF209004EB52B /* UseStackMemoryAfterFunctionReturn.m in Sources */,
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
+				776F63DC262345AF0093554E /* DivisionByZero.m in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
 				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
@@ -664,6 +681,7 @@
 				77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
+				776F63CD262329230093554E /* InvalidFloatCast.m in Sources */,
 				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,
 				77F99EE425FB44140079F813 /* RuntimeSanitizationVC.swift in Sources */,
 				77FBF5B626204EB000BA0C86 /* ASTest.cpp in Sources */,

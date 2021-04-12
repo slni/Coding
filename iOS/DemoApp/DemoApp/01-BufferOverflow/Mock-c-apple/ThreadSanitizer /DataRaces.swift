@@ -23,7 +23,7 @@ class DataRaces {
         repeat {
             usleep(1000)
         } while !messageIsAvailable
-        print(message)
+        print(message ?? "nil")
     }
     
     func startTest() {

@@ -11,7 +11,7 @@ import UIKit
 class RuntimeSanitizationVC: UIViewController {
     
     enum SubDemo: CaseIterable {
-        
+        case separator_as
         case as_UseOfDeallocatedMemory_1
         case as_UseOfDeallocatedMemory_2
         case as_DeallocationOfDeallocatedMemory
@@ -21,10 +21,18 @@ class RuntimeSanitizationVC: UIViewController {
         case as_OverflowAndUnderflowOfBuffers
         case as_OverflowOfCPPContainers
         
+        case separator_ts
         case ts_DataRaces
+        
+        case separator_ubs
+        case ubs_InvalidFloatCast
+        case ubs_DivisionByZero
+        case ubs_IntegerOverflow
 
         func action() {
             switch self {
+            case .separator_as:
+                print("地址问题检测")
             case .as_UseOfDeallocatedMemory_1:
                 UseDeallocatedMemory.useOfDeallocatedMemory()
             case .as_UseOfDeallocatedMemory_2:
@@ -41,13 +49,25 @@ class RuntimeSanitizationVC: UIViewController {
                 OverflowUnderflowOfBuffers.test()
             case .as_OverflowOfCPPContainers:
                 OverflowOfCPPContainers.test()
+            case .separator_ts:
+                print("线程问题检测")
             case .ts_DataRaces:
                 DataRaces.shared.startTest()
+            case .separator_ubs:
+                print("未定义行为检测")
+            case .ubs_InvalidFloatCast:
+                InvalidFloatCast.test()
+            case .ubs_DivisionByZero:
+                DivisionByZero.test()
+            case .ubs_IntegerOverflow:
+                IntegerOverflow.test()
             }
         }
         
         var title: (String, UIColor) {
             switch self {
+            case .separator_as:
+                return ("--------地址检测--------", .black)
             case .as_UseOfDeallocatedMemory_1:
                 return ("使用了已释放的内存_demo1", .green)
             case .as_UseOfDeallocatedMemory_2:
@@ -64,13 +84,25 @@ class RuntimeSanitizationVC: UIViewController {
                 return ("缓冲区溢出(上溢和下溢)", .green)
             case .as_OverflowOfCPPContainers:
                 return ("C++容器溢出", .green)
+            case .separator_ts:
+                return ("--------线程检测--------", .black)
             case .ts_DataRaces:
-                return ("多线程数据竞争", .red)
+                return ("多线程数据竞争", .green)
+            case .separator_ubs:
+                return ("--------未定义行为检测--------", .black)
+            case .ubs_InvalidFloatCast:
+                return ("无效的浮点数投射", .black)
+            case .ubs_DivisionByZero:
+                return ("0为除数", .red)
+            case .ubs_IntegerOverflow:
+                return ("Int溢出", .green)
             }
         }
         
         var detailTitle: String {
             switch self {
+            case .separator_as:
+                return "++++++++++++++++++++++++++++++++"
             case .as_UseOfDeallocatedMemory_1:
                 return "使用了已经释放的内存"
             case .as_UseOfDeallocatedMemory_2:
@@ -87,7 +119,17 @@ class RuntimeSanitizationVC: UIViewController {
                 return "栈区,堆区,全局区 溢出; (上溢出和下溢出)"
             case .as_OverflowOfCPPContainers:
                 return ""
+            case .separator_ts:
+                return "++++++++++++++++++++++++++++++++"
             case .ts_DataRaces:
+                return ""
+            case .separator_ubs:
+                return "++++++++++++++++++++++++++++++++"
+            case .ubs_InvalidFloatCast:
+                return ""
+            case .ubs_DivisionByZero:
+                return ""
+            case .ubs_IntegerOverflow:
                 return ""
             }
         }
