@@ -35,6 +35,8 @@
 		779D0BAC25F219530082C89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BAA25F219530082C89F /* LaunchScreen.storyboard */; };
 		779D0BB725F219540082C89F /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BB625F219540082C89F /* DemoAppTests.swift */; };
 		779D0BC225F219540082C89F /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BC125F219540082C89F /* DemoAppUITests.swift */; };
+		779E1B5E262FCBE300397621 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779E1B5D262FCBE300397621 /* LocalPushViewController.swift */; };
+		779E1B63262FCCA200397621 /* 04-ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779E1B62262FCCA200397621 /* 04-ReadMe.swift */; };
 		77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C6EBF4262065E900C13231 /* DataRaces.swift */; };
 		77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E7425FB184E0079F813 /* 01-ReadMe.swift */; };
 		77F99E8B25FB1E4C0079F813 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F99E8A25FB1E4C0079F813 /* HomeViewController.swift */; };
@@ -115,6 +117,8 @@
 		779D0BBD25F219540082C89F /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0BC125F219540082C89F /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		779D0BC325F219540082C89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779E1B5D262FCBE300397621 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
+		779E1B62262FCCA200397621 /* 04-ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "04-ReadMe.swift"; sourceTree = "<group>"; };
 		77C6EBF4262065E900C13231 /* DataRaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaces.swift; sourceTree = "<group>"; };
 		77F99E7425FB184E0079F813 /* 01-ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-ReadMe.swift"; sourceTree = "<group>"; };
 		77F99E8A25FB1E4C0079F813 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -321,6 +325,7 @@
 				77F99E7325FB17DC0079F813 /* 01-BufferOverflow */,
 				7714506F26088CAB001EDCC7 /* 02-IGListKit */,
 				770D60F5261494F3001AFB1F /* 03-DebounceThrottle */,
+				779E1B59262FCB9600397621 /* 04-LocalPush */,
 				779D0B9F25F219530082C89F /* AppDelegate.swift */,
 				779D0BA825F219530082C89F /* Assets.xcassets */,
 				779D0BAA25F219530082C89F /* LaunchScreen.storyboard */,
@@ -346,6 +351,15 @@
 				779D0BC325F219540082C89F /* Info.plist */,
 			);
 			path = DemoAppUITests;
+			sourceTree = "<group>";
+		};
+		779E1B59262FCB9600397621 /* 04-LocalPush */ = {
+			isa = PBXGroup;
+			children = (
+				779E1B62262FCCA200397621 /* 04-ReadMe.swift */,
+				779E1B5D262FCBE300397621 /* LocalPushViewController.swift */,
+			);
+			path = "04-LocalPush";
 			sourceTree = "<group>";
 		};
 		77F99E7325FB17DC0079F813 /* 01-BufferOverflow */ = {
@@ -663,6 +677,7 @@
 				77F99E9E25FB1EDD0079F813 /* SLNavigationController.swift in Sources */,
 				776F63D626233DE30093554E /* IntegerOverflow.m in Sources */,
 				771BB177260DF0FF004EB52B /* DeallocationOfNonallocatedMemory.m in Sources */,
+				779E1B63262FCCA200397621 /* 04-ReadMe.swift in Sources */,
 				771BB171260DEFD7004EB52B /* DeallocationOfDeallocatedMemory.m in Sources */,
 				7714507126088CE1001EDCC7 /* 02-ReadMe.swift in Sources */,
 				771451052608B732001EDCC7 /* ExpandableSectionController.swift in Sources */,
@@ -677,6 +692,7 @@
 				77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */,
 				771BB183260DF47E004EB52B /* UseOut-of-ScopeStackMemory.m in Sources */,
 				774483872613470900C5CD34 /* OverflowUnderflowOfBuffers.m in Sources */,
+				779E1B5E262FCBE300397621 /* LocalPushViewController.swift in Sources */,
 				776F63CD262329230093554E /* InvalidFloatCast.m in Sources */,
 				770D60FF2614965F001AFB1F /* DebounceThrottleTestVC.swift in Sources */,
 				77F99EE425FB44140079F813 /* RuntimeSanitizationVC.swift in Sources */,

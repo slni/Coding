@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
         case bufferOverflow = "01-BufferOverflow"
         case igListKit = "02-IGListKit"
         case debounceThrottle = "03-DebounceThrottle"
+        case localPush = "04-LocalPush"
         
         var vc: UIViewController {
             switch self {
@@ -23,6 +24,8 @@ class HomeViewController: UIViewController {
                 return IGListKitVC()
             case .debounceThrottle:
                 return DebounceThrottleTestVC()
+            case .localPush:
+                return LocalPushViewController()
             }
         }
         
