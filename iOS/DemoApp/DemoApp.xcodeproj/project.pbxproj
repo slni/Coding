@@ -31,7 +31,6 @@
 		776F63D626233DE30093554E /* IntegerOverflow.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F63D526233DE30093554E /* IntegerOverflow.m */; };
 		776F63DC262345AF0093554E /* DivisionByZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F63DB262345AF0093554E /* DivisionByZero.m */; };
 		779D0BA025F219530082C89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0B9F25F219530082C89F /* AppDelegate.swift */; };
-		779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BA125F219530082C89F /* SceneDelegate.swift */; };
 		779D0BA925F219530082C89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BA825F219530082C89F /* Assets.xcassets */; };
 		779D0BAC25F219530082C89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779D0BAA25F219530082C89F /* LaunchScreen.storyboard */; };
 		779D0BB725F219540082C89F /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D0BB625F219540082C89F /* DemoAppTests.swift */; };
@@ -107,7 +106,6 @@
 		776F63DB262345AF0093554E /* DivisionByZero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivisionByZero.m; sourceTree = "<group>"; };
 		779D0B9C25F219530082C89F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D0B9F25F219530082C89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		779D0BA125F219530082C89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		779D0BA825F219530082C89F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		779D0BAB25F219530082C89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		779D0BAD25F219530082C89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -324,7 +322,6 @@
 				7714506F26088CAB001EDCC7 /* 02-IGListKit */,
 				770D60F5261494F3001AFB1F /* 03-DebounceThrottle */,
 				779D0B9F25F219530082C89F /* AppDelegate.swift */,
-				779D0BA125F219530082C89F /* SceneDelegate.swift */,
 				779D0BA825F219530082C89F /* Assets.xcassets */,
 				779D0BAA25F219530082C89F /* LaunchScreen.storyboard */,
 				779D0BAD25F219530082C89F /* Info.plist */,
@@ -675,7 +672,6 @@
 				77F99EC825FB3A560079F813 /* MessageViewController.swift in Sources */,
 				776F63DC262345AF0093554E /* DivisionByZero.m in Sources */,
 				77F99E7525FB184E0079F813 /* 01-ReadMe.swift in Sources */,
-				779D0BA225F219530082C89F /* SceneDelegate.swift in Sources */,
 				771BB168260DE788004EB52B /* UseDeallocatedMemory.m in Sources */,
 				77F99EA325FB1EFB0079F813 /* SLTabBarViewController.swift in Sources */,
 				77C6EBF5262065E900C13231 /* DataRaces.swift in Sources */,
@@ -867,7 +863,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,7 +888,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UK6RQTA7W;
 				INFOPLIST_FILE = DemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
